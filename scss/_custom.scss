@@ -1,0 +1,136 @@
+@font-face { 
+	font-family: 'maisonneue-bold'; 
+	src: url('maisonneue-bold-webfont.eot'); 
+	src: url('../assets/fonts/maisonneue-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/maisonneue-bold-webfont.woff') format('woff'), url('../assets/fonts/maisonneue-bold-webfont.ttf') format('truetype'), url('../assets/fonts/maisonneue-bold-webfont.svg#webfont') format('svg'); 
+}
+
+@font-face { 
+	font-family: 'maisonneue-demi'; 
+	src: url('maisonneue-demi-webfont.eot'); 
+	src: url('../assets/fonts/maisonneue-demi-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/maisonneue-demi-webfont.woff') format('woff'), url('../assets/fonts/maisonneue-demi-webfont.ttf') format('truetype'), url('../assets/fonts/maisonneue-demi-webfont.svg#webfont') format('svg'); 
+}
+
+@font-face { 
+	font-family: 'maisonneue-book'; 
+	src: url('maisonneue-book-webfont.eot'); 
+	src: url('../assets/fonts/maisonneue-book-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/maisonneue-book-webfont.woff') format('woff'), url('../assets/fonts/maisonneue-book-webfont.ttf') format('truetype'), url('../assets/fonts/maisonneue-book-webfont.svg#webfont') format('svg'); 
+}
+
+
+/***** VARIABLES *****/
+
+$font-base:	'maisonneue-book', 'Franklin Gothic', Arial, sans-serif;
+$font-bold:	'maisonneue-demi', 'Franklin Gothic Medium', Arial, sans-serif;
+
+$gnb-blue: #1986fb;
+
+$pad: 15px;
+$pad2: $pad * 2;
+$pad3: $pad * 3;
+
+
+
+
+/***** STRUCTURE *****/
+
+body {
+	background: $charcoal;
+}
+
+.cert-frame {
+	text-align: center;
+	margin-top: $pad;
+}
+
+.cert-top {
+	padding-bottom: $pad2;	
+}
+
+	.cert__logo {
+		background: url("../assets/images/gnb-logo-blue.png") 0 0 no-repeat;
+		background-size: contain;
+		height: 25px;
+		width: 75px;
+		margin: $pad2 auto 0 auto;
+	}
+
+.cert-middle {
+	background: $gnb-blue;
+	padding-top: $pad2;
+	padding-bottom: $pad2;
+	color: $white;
+}
+
+	.cert__participant {
+		margin-top: $pad2;
+		margin-bottom: $pad2;
+	}
+
+.cert-bottom {
+	padding-top: $pad;
+	padding-bottom: $pad2;
+}
+
+	.cert-sign {
+		@media #{$small-up} {
+			margin-bottom: -10px;
+		}
+		@media #{$medium-up} {
+			margin-bottom: -20px;
+		}
+	}
+
+.button {
+	background-color: $oil;
+}
+	.button:hover {
+		background-color: $monsoon;	
+	};
+
+
+
+/***** FONTS *****/
+
+body {
+	font-size: 0.8rem;
+}
+
+.cert__participant {
+	font-family: $font-bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	@media #{$small-up} {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+	@media #{$medium-up} {
+		font-size: 2.4rem;
+		line-height: 2.4rem;
+	}
+	
+}
+
+.text--med-caps {
+	font-family: $font-bold;	
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	@media #{$small-up} {
+		font-size: 1rem;
+	}
+	@media #{$medium-up} {
+		font-size: 1.2rem;
+	}
+}
+
+.cert__title {
+	@extend .text--med-caps;
+}
+.cert__course {
+	@extend .text--med-caps;
+}
+
+.cert-certified {
+	color: $gnb-blue;
+}
+
+
