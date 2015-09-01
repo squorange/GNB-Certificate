@@ -6344,14 +6344,14 @@ body {
   margin-top: 15px; }
 
 .cert-top {
-  padding-bottom: 30px; }
+  padding-bottom: 45px; }
 
 .cert__logo {
   background: url("../assets/images/gnb-logo-blue.png") 0 0 no-repeat;
   background-size: contain;
   height: 25px;
   width: 75px;
-  margin: 30px auto 0 auto; }
+  margin: 45px auto 0 auto; }
 
 .cert-middle {
   background: #1986fb;
