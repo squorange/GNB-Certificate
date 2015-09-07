@@ -6367,12 +6367,28 @@ body {
   padding-top: 15px;
   padding-bottom: 30px; }
 
-@media only screen {
-  .cert-sign {
-    margin-bottom: -10px; } }
-@media only screen and (min-width: 64.0625em) {
-  .cert-sign {
-    margin-bottom: -20px; } }
+.certification__sign {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100px; }
+  @media only screen {
+    .certification__sign div {
+      padding-top: 10px; } }
+  @media only screen and (min-width: 64.0625em) {
+    .certification__sign div {
+      padding-top: 20px; } }
+
+.certification__seal {
+  border: 1px solid rgba(100, 100, 100, 0); }
+  .certification__seal img {
+    height: 100px;
+    width: auto; }
 
 .button {
   background-color: #333333; }
@@ -6408,5 +6424,16 @@ body {
     .text--med-caps, .cert__title, .cert__course {
       font-size: 1.2rem; } }
 
-.cert-certified {
+.text--blue {
   color: #1986fb; }
+
+.certification__sign {
+  font-family: 'La Belle Aurore', cursive; }
+  @media only screen {
+    .certification__sign {
+      font-size: 2rem;
+      line-height: 1.5rem; } }
+  @media only screen and (min-width: 40.0625em) {
+    .certification__sign {
+      font-size: 2.25rem;
+      line-height: 1.75rem; } }

@@ -70,16 +70,33 @@ body {
 	padding-top: $pad;
 	padding-bottom: $pad2;
 }
-
-	.cert-sign {
-		@media #{$small-up} {
-			margin-bottom: -10px;
-		}
-		@media #{$large-up} {
-			margin-bottom: -20px;
+	.certification__sign {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-align-items: center;
+		align-items: center;
+	  -webkit-justify-content: center;		
+	  justify-content: center;
+		height: 100px;		
+		div {
+			@media #{$small-up} {
+				padding-top: 10px;
+			}
+			@media #{$large-up} {
+				padding-top: 20px;
+			}
 		}
 	}
-
+	.certification__seal {
+		border: 1px solid rgba(100,100,100,0);
+		img {
+			height: 100px;
+			width: auto;
+		}
+	}
+	
 .button {
 	background-color: $oil;
 }
@@ -129,8 +146,18 @@ body {
 	@extend .text--med-caps;
 }
 
-.cert-certified {
+.text--blue {
 	color: $gnb-blue;
 }
-
+.certification__sign {
+	font-family: 'La Belle Aurore', cursive;
+	@media #{$small-up} {
+		font-size: 2rem;
+		line-height: 1.5rem;
+	}
+	@media #{$medium-up} {
+		font-size: 2.25rem;
+		line-height: 1.75rem;
+	}
+}
 
